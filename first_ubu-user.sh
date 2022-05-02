@@ -8,18 +8,22 @@ sudo apt install -y \
 	htop \
 	ansible \
 	unzip \
-	nginx \
 	zsh \
 	python3-pip \
-	python3-setuptools
+	python3-setuptools \
+	fail2ban 
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-wget https://raw.githubusercontent.com/blurer/myBS/master/zshrc -o $HOME/.zshrc
-wget https://raw.githubusercontent.com/blurer/myBS/master/authorized_keys -o $HOME/.ssh/
+cd $HOME/
+wget https://raw.githubusercontent.com/blurer/myBS/master/zshrc
+mv zshrc .zshrc
 
-sudo systemctl start nginx
-sudo systemctl enable nginx
+mkdir $HOME/.ssh/
+$HOME/.ssh/
+wget https://raw.githubusercontent.com/blurer/myBS/master/authorized_keys
+chmod 600 authorized_keys
 
-mkdir $HOME/dev/
-mkdir $HOME/dev/resume/
+sudo systemctl enable fail2ban
+
+source .zshrc
