@@ -19,11 +19,6 @@ cd $HOME/
 wget https://raw.githubusercontent.com/blurer/myBS/master/zshrc
 mv zshrc .zshrc
 
-mkdir $HOME/.ssh/
-$HOME/.ssh/
-wget https://raw.githubusercontent.com/blurer/myBS/master/authorized_keys
-chmod 600 authorized_keys
-
 sudo systemctl enable fail2ban
 
 source .zshrc
