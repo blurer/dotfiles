@@ -11,3 +11,5 @@ chown -R bl:bl /home/bl/.ssh/
 chsh -S /bin/bash bl
 wget https://raw.githubusercontent.com/blurer/myBS/main/bashrc 
 mv bashrc /home/bl/.bashrc
+ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+echo "%sudo   ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/bl
