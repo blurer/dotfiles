@@ -1,0 +1,30 @@
+host vm
+	hostname 10.1.1.1
+host dt
+	hostname 10.2.2.10
+host lt
+	hostname 10.2.2.11
+host de
+	hostname thicc.blurer.net
+host ca
+	hostname ca.blurer.net
+host dns1
+	hostname 10.1.1.10
+host dns2
+	hostname 10.1.1.11
+host vpn
+	hostname 10.1.1.12
+host bastion
+	hostname 10.1.1.13
+host docker
+	hostname 10.1.1.14
+host plex
+	hostname 10.1.1.15
+host factorio
+	hostname 10.1.1.16
+host devops
+	hostname 10.1.1.17
+host sshkeys
+	hostname 10.1.1.18
+host syncthang
+	hostname 10.1.1.19

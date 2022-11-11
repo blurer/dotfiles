@@ -1,0 +1,4 @@
+0 * * * * wget https://raw.githubusercontent.com/blurer/dotfiles/main/zshrc > $HOME/.zshrc
+
+0 * * * * wget https://raw.githubusercontent.com/blurer/dotfiles/main/config > $HOME/.ssh/config/
+
