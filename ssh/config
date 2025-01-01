@@ -6,14 +6,6 @@ host pi4
   hostname 10.1.1.13
 host ec200a
 	hostname 10.2.2.2
-node1
-  hostname 10.2.2.11
-node2
-  hostname 10.2.2.12
-node3
-  hostname 10.2.2.13
-node4
-  hostname 10.2.2.14
 host ts-bl-tpa
   hostname 100.119.129.11
 host ts-cloudpanel-1
