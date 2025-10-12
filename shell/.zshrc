@@ -69,3 +69,4 @@ alias pubkey='cat ~/.ssh/id_ed25519.pub'
 alias shed='vim ~/.ssh/config'
 alias pivpn='ssh pi "pivpn -c"'
 alias pivpn-ts='ssh tail-pi "pivpn -c"'
+export PATH="$HOME/.opencode/bin:$PATH"
