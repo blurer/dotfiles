@@ -70,3 +70,22 @@ alias shed='vim ~/.ssh/config'
 alias pivpn='ssh pi "pivpn -c"'
 alias pivpn-ts='ssh tail-pi "pivpn -c"'
 export PATH="$HOME/.opencode/bin:$PATH"
+
+# Default editor - Neovim
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+# Editor aliases
+alias edit='nvim'
+alias e='nvim'
+alias vi='nvim'
+alias vim='nvim'
+
+# Quick edit common files
+alias zshconfig='nvim ~/.zshrc'
+alias nvimconfig='nvim ~/.config/nvim/lua/user/init.lua'
+
+# Notes directory (Obsidian replacement)
+export NOTES_DIR="$HOME/notes"
+alias notes='cd $NOTES_DIR && nvim'
+alias n='cd $NOTES_DIR && nvim'
