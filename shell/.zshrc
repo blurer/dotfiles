@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.opencode/bin:$PATH"
 
 # set zsh stuff
 ZSH_THEME="ys"
@@ -49,41 +50,19 @@ alias gita='git add .'
 alias gitc='git commit -m'
 alias gitp='git push'
 alias gc='git clone'
-alias ts='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
-alias ml='cd $HOME/dev/ml/'
-alias mkd='/Users/bl/Library/Python/3.10/bin/mkdocs'
 alias zrl='source ~/.zshrc'
 alias zed='vim ~/.zshrc'
-alias bupg='brew update & brew upgrade'
 alias c='/usr/bin/clear'
 alias mkdir='mkdir -pv'
 alias h='history'
 alias j='jobs -l'
 alias now='date +"%d-%m-%Y"'
-alias fastping='ping -c 100 -s.2'
+alias fp='ping -c 100 -s.2'
 alias ping='ping -c 5'
-refresh () { while true; do $@; sleep 1; clear; done; }
-alias ytdlm='yt-dlp --extract-audio --audio-format mp3'
 alias uptime='uptime --pretty'
 alias pubkey='cat ~/.ssh/id_ed25519.pub'
 alias shed='vim ~/.ssh/config'
-alias pivpn='ssh pi "pivpn -c"'
-alias pivpn-ts='ssh tail-pi "pivpn -c"'
-export PATH="$HOME/.opencode/bin:$PATH"
-
-# Default editor - Neovim
-export EDITOR='nvim'
-export VISUAL='nvim'
-
-# Editor aliases
-alias edit='nvim'
-alias e='nvim'
-alias vi='nvim'
-alias vim='nvim'
-
-# Quick edit common files
-alias zshconfig='nvim ~/.zshrc'
-alias nvimconfig='nvim ~/.config/nvim/lua/user/init.lua'
+alias cc='claude --dangerously-skip-permissions'
 
 # Notes directory (Obsidian replacement)
 export NOTES_DIR="$HOME/notes"
