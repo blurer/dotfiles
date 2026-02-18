@@ -26,7 +26,6 @@ setopt auto_cd
 # 256 color mode
 export TERM="xterm-256color"
 
-
 # alias
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
@@ -41,8 +40,6 @@ alias zshed='vim $HOME/.zshrc'
 alias dev='cd $HOME/dev/'
 alias dkr='cd $HOME/docker/'
 alias dps='docker ps'
-alias pacu='sudo pacman -Syu'
-alias pacs='sudo pacman -S'
 alias aptu='sudo apt update -y ; sudo apt upgrade -y'
 alias apti='sudo apt install -y'
 alias giti='git init'
@@ -63,8 +60,3 @@ alias uptime='uptime --pretty'
 alias pubkey='cat ~/.ssh/id_ed25519.pub'
 alias shed='vim ~/.ssh/config'
 alias cc='claude --dangerously-skip-permissions'
-
-# Notes directory (Obsidian replacement)
-export NOTES_DIR="$HOME/notes"
-alias notes='cd $NOTES_DIR && nvim'
-alias n='cd $NOTES_DIR && nvim'
